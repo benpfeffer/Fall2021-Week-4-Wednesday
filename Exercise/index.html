@@ -1,20 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+table.roundedCorners {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    border-spacing: 0;
+    width:700px;
+    }
+table.roundedCorners td,
+table.roundedCorners th {
+    padding: 23px;
+    }
+table.roundedCorners tr:last-child > td {
+    border-bottom: none;
+}
+</style>
 <head>
     <meta charset="UTF-8">
-    <title>HTML Form </title>
+    <title>Form elements</title>
 </head>
-<body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+<body style="background-color:rgb(223, 245, 248);">
+    <form action="/action_page.php">
+    <table class="roundedCorners"; bgcolor="white"; style="margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:40px;"> Sample Form
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="font-size:18px;"> Choose a topic, and a research interest for the indiviudal visualization project.
+                </td>
+            </tr>
+            <tr>
+                <td style="color:red;"> * Required
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Email <span style="color: red">*</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style=" width:300px" placeholder='Your Email' type="email" id="email" name="email">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Firstname
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style=" width:300px" placeholder='Your Answer' type="firstname" id="firstname" name="firstname">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Lastname
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style=" width:300px" placeholder='Your Answer' type="lastname" id="lastname" name="lastname">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Research Interest (list at least 3) <span style="color: red">*</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style=" width:300px" placeholder='Your Answer' type="research" id="research" name="research">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Project Title - (e.g. income vs education US Census) <span style="color: red">*</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style=" width:300px" placeholder='Your Answer' type="project" id="project" name="project">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Top Skills <span style="color: red">*</span>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style="margin: 0px 0px 0 5px;" type="checkbox" id="skill1" name="skill1" value="SQL">
+                        <label for="skill1"> SQL</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill2" name="skill2" value="Python">
+                        <label for="skill2"> Python Programming</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill3" name="skill3" value="Boat">
+                        <label for="skill3"> Matlab</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill4" name="skill4" value="SQL">
+                        <label for="skill4"> D3js and Javascript</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill5" name="skill5" value="Python">
+                        <label for="skill5"> C# VB.net</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill6" name="skill6" value="Boat">
+                        <label for="skill6"> PHP</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill7" name="skill7" value="SQL">
+                        <label for="skill7"> Node.JS</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill8" name="skill8" value="Python">
+                        <label for="skill8"> Web design tools (e.g. Wordpress)</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill9" name="skill9" value="Boat">
+                        <label for="skill9"> HTML and CSS</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill10" name="skill10" value="SQL">
+                        <label for="skill10"> Excel,</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill11" name="skill11" value="Python">
+                        <label for="skill11"> PowerBI</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill12" name="skill12" value="Boat">
+                        <label for="skill12"> Tableau</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill13" name="skill13" value="SQL">
+                        <label for="skill13"> Option 13</label><br>
+                        <input style="margin: 20px 0px 0 5px;" type="checkbox" id="skill14" name="skill14" value="Python">
+                        <label for="skill14"> Other:<input style="margin: -200px 0px 0 5px;" id='other-text' type='text' /></label><br>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="roundedCorners"; bgcolor="white"; style="margin:15px; margin-left: auto; margin-right: auto;">
+        <thead >
+        <tr>
+            <td style="font-size:18px;"> Suggestions or Questions
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                        <input style=" width:300px" placeholder='Your Answer' type="project" id="project" name="project">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input style="margin-left:485px; background-color: #4CAF50; font-size: 18px; padding: 14px 20px; border-radius: 12px; width: 100px;" type="submit" value="Submit">
+    </form>
 </body>
 </html>
